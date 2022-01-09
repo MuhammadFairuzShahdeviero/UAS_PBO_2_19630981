@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72578f10-86a5-482f-b543-f31e47670f84">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="5"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#778899">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFDFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#5F9EA0">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFFDFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#DEB887">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#FFE3BF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="bbe9c7f9-d29d-4859-ac82-6ec4f9d9e88d">
+		<queryString language="SQL">
+			<![CDATA[SELECT * FROM m_buku;]]>
+		</queryString>
+		<field name="bukuId" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuNama" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuHarga" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuCreatedAt" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuUpdatedAt" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Buku" uuid="020a6df2-6931-4a24-bd23-fd543b2359e3">
+		<queryString language="SQL">
+			<![CDATA[SELECT * FROM m_buku;]]>
+		</queryString>
+		<field name="bukuId" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuNama" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuHarga" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuCreatedAt" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="bukuUpdatedAt" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM m_buku;]]>
+	</queryString>
+	<field name="bukuId" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bukuNama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bukuHarga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bukuCreatedAt" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bukuUpdatedAt" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="195" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="555" height="36" uuid="dfcedd24-1bae-497c-8ad2-0f998bff6f87"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOKO BUKU VERO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="107" width="555" height="26" uuid="b4e5b4c6-3fa2-4f43-b0e2-6ef40534cbca"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Master Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="48" width="555" height="16" uuid="7a1f6f8b-7bfa-4c40-86ff-59d544aa7d84"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. A Yani KM 5, Ruko No.78]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="555" height="16" uuid="13272367-a177-42c7-ba37-22268fbec297"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Telp : 0857394835**]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="64" width="555" height="16" uuid="0169ce8b-2ab4-48e0-8320-5b7550bdbfd4"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Banjarmasin, Kalimantan Selatan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="142" width="555" height="20" uuid="b6db46f4-a69b-4737-8972-58cce15371d0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date()) ]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="127" width="555" height="16" uuid="c5d68523-0a52-433b-9405-88e286a1974e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dicetak pada :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="143" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 3" style="table 3" x="0" y="0" width="555" height="143" uuid="bd2260d2-8b85-4665-a6b9-b1222d5089c3"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Buku" uuid="cdb9a18f-aa75-4ef7-82bd-fb40b4159b12">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="32" uuid="7ceb5a52-2497-40b2-9c53-d3451e44839f">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="0" width="20" height="30" uuid="c0eb4cf2-f92c-42b4-ab5b-d32a22a4c913"/>
+								<text><![CDATA[ID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="6" y="0" width="19" height="20" uuid="d0a9bd9b-1740-4cda-bf21-69348d8151d4"/>
+								<textFieldExpression><![CDATA[$F{bukuId}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="174" uuid="0fe5f8fa-e03e-414e-a9f3-d589e314a4bb">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="7" y="0" width="90" height="30" uuid="55f37423-dd1e-4a35-be8b-dafa9df5d404"/>
+								<text><![CDATA[Nama]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="174" height="20" uuid="d6a1d727-6479-43aa-a87e-624a2c1ff94a"/>
+								<textFieldExpression><![CDATA[$F{bukuNama}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="122" uuid="343e3b54-829e-4706-afb7-b885cbc2b315">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="8" y="0" width="90" height="30" uuid="1159d91f-4e7a-4b69-9c42-fc122977d9b0"/>
+								<text><![CDATA[Harga]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="7" y="0" width="110" height="20" uuid="8189b630-902a-4a00-8493-bd6014f10679"/>
+								<textFieldExpression><![CDATA[$F{bukuHarga}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="120" uuid="16020f91-d810-48e6-a532-e193c672161f">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="8" y="0" width="90" height="30" uuid="a34bd31c-514b-45a3-9162-929b226bbf56"/>
+								<text><![CDATA[Tanggal Input]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="7" y="0" width="102" height="20" uuid="36d3fe5e-c0b2-4a9e-9f13-591f2cc26a7b"/>
+								<textFieldExpression><![CDATA[$F{bukuCreatedAt}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="104" uuid="43ff4fb1-b76d-4cfe-8c9e-2af6087e4728">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="6" y="0" width="90" height="30" uuid="16fc37fe-acf1-4db7-9fa0-35ab391a267a"/>
+								<text><![CDATA[Tanggal Perbaharuan]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="6" y="0" width="90" height="20" uuid="13820d80-fa28-4e1a-a5fa-50f96b3d8eb1"/>
+								<textFieldExpression><![CDATA[$F{bukuUpdatedAt}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="21" splitType="Stretch"/>
+	</detail>
+	<summary>
+		<band height="18" splitType="Stretch"/>
+	</summary>
+</jasperReport>
